@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -27,6 +29,16 @@ public class Main {
         char znak = 'a';
 
         //napisz program w ktorym wylosujesz liczbe od 1 do 100, wpiszesz liczbe z klawiatury, powiesz czy ktos zgadl porządaną
+
+int wylosowanaLiczba = (int)(Math.random()*100+1);
+System.out.println("Wylosowano "+wylosowanaLiczba);
+
+//wczytywanie liczby z klawiatury
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("podaj liczbes");
+        int zgadywanaLiczba = scanner.nextInt();
+        System.out.println("Wpisano "+zgadywanaLiczba);
 
     }
 }
